@@ -115,7 +115,7 @@ node .\packages\coding-agent\dist\cli.js
 
 ![会话 A 流程图：经过 coding-agent、agent 和 ai，远程模型调用一次后返回答案](../images/session-a.png)
 
-**图 1**　会话 A 的调用流程。两张图都用实线表示调用、虚线表示返回。 [draw.io 源图](../images/session-a.drawio)
+**图 1**　会话 A：直接问答。 [draw.io 源图](../images/session-a.drawio)
 
 #### 会话 B 读取文件
 
@@ -141,7 +141,7 @@ S6a 记录了一次对项目根目录 `practice4.txt` 的 `read` 调用，回复
 
 ![会话 B 流程图：首轮返回 read 调用，本地工具读文件，第二轮带着工具结果请求模型](../images/session-b.png)
 
-**图 2**　会话 B 的调用流程。本地 `read` 由 `coding-agent` 提供，由 `agent` 调用。三个日志框按 S6b 的实测顺序标注。 [draw.io 源图](../images/session-b.drawio)
+**图 2**　会话 B：读取本地文件。 [draw.io 源图](../images/session-b.drawio)
 
 ## 三、任务书问题作答
 
